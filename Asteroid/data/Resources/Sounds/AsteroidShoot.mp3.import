@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AsteroidShoot.mp3-08b4c4b19bfb04b89d6e93bfab40beb3.mp3str"
+
+[deps]
+
+source_file="res://data/Resources/Sounds/AsteroidShoot.mp3"
+dest_files=[ "res://.import/AsteroidShoot.mp3-08b4c4b19bfb04b89d6e93bfab40beb3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

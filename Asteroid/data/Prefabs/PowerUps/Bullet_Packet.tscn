@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://data/Resources/Sprites/PowerUps/bullet_packet 16x16.png" type="Texture" id=1]
+[ext_resource path="res://data/Resources/Shaders/bouncy_shader.shader" type="Shader" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7, 7 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 2 )
+shader_param/speed = 5.0
+shader_param/distortion = Vector2( 0, 2 )
+
+[node name="Bullet_Packet" type="Area2D" groups=["Bullet_package"]]
+self_modulate = Color( 2, 2, 0, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 3 )
+texture = ExtResource( 1 )
